@@ -11,7 +11,9 @@ module.exports = withPlugins([[indexSearch], [feed], [sitemap]], {
   // is `/` and by using that, would instantly create a redirect
 
   trailingSlash: true,
-
+  images: {
+    domains: ['www.groupkayna.addpodcast.com'],
+  },
   // By enabling verbose logging, it will provide additional output details for
   // diagnostic purposes. By default is set to false.
   // verbose: true,

@@ -7,7 +7,7 @@ import { helmetSettingsFromMetadata } from 'lib/site';
 
 import Nav from 'components/Nav';
 import Main from 'components/Main';
-import Footer from 'components/Footer';
+import Footer from 'components/Layout/Footer';
 
 const Layout = ({ children }) => {
   const router = useRouter();

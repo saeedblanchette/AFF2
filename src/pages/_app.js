@@ -8,10 +8,12 @@ import { getRecentPosts } from 'lib/posts';
 import { getCategories } from 'lib/categories';
 import NextNProgress from 'nextjs-progressbar';
 import { getAllMenus } from 'lib/menus';
+import 'styles/components/timeline.css';
 
-import 'styles/globals.scss';
-import variables from 'styles/_variables.module.scss';
-
+// import 'styles/globals.scss';
+// import variables from 'styles/_variables.module.scss';
+import '../styles/global.css';
+import 'styles/global.css';
 function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
   const site = useSiteContext({
     metadata,
@@ -23,7 +25,7 @@ function App({ Component, pageProps = {}, metadata, recentPosts, categories, men
   return (
     <SiteContext.Provider value={site}>
       <SearchProvider>
-        <NextNProgress height={4} color={variables.progressbarColor} />
+        <NextNProgress height={4} color="#facc15" />
         <Component {...pageProps} />
       </SearchProvider>
     </SiteContext.Provider>

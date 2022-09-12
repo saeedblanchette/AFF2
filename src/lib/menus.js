@@ -16,7 +16,6 @@ export async function getAllMenus() {
   });
 
   const menus = data?.data.menus.edges.map(mapMenuData);
-
   const defaultNavigation = createMenuFromPages({
     locations: [MENU_LOCATION_NAVIGATION_DEFAULT],
     pages: await getTopLevelPages({
