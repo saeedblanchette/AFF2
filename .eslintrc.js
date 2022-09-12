@@ -32,5 +32,6 @@ module.exports = {
     '@next/next/no-img-element': 'off',
     'react/no-unescaped-entities': 0,
     'no-unused-vars': 'off',
+    'prettier/prettier': 0,
   },
 };
